@@ -1,7 +1,7 @@
-name: Workflow error
-on: push
-jobs:
-  hello:
-    run-on: ubuntu-latest # Typo here
-    steps:
-    - run: date
+# name: Workflow error
+# on: push
+# jobs:
+#   hello:
+#     run-on: ubuntu-latest # Typo here
+#     steps:
+#     - run: date

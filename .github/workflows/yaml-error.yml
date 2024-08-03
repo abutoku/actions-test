@@ -1,0 +1,7 @@
+name: YAML error
+on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest 
+      steps: # Indentation error here
+      - run: echo "YAML Syntax error"
