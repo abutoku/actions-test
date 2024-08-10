@@ -1,0 +1,16 @@
+name: Manual
+on: 
+  workflow_dispatch:
+    inputs:
+      log-level:
+        type: choice
+        description: 'The level of logging to use'
+        options: 
+          - info
+          - warning
+          - error
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "${{ inputs.greeting }}"
