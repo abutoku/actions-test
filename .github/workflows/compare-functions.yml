@@ -1,0 +1,11 @@
+name: Compare functions
+on: push
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv | grep '_FUNK'
+        env:
+          CONTAINS_FUNK: ${{ contains('Hello', 'ell') }}
+          STARTS_WITH_FUNK: ${{ startsWith('Hello', 'He') }}
+          ENDS_WITH_FUNK: ${{ endsWith('Hello', 'lo') }}
